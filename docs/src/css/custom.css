@@ -1,0 +1,132 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Cor principal - Verde escuro */
+  --ifm-color-primary: #266d35;
+  --ifm-color-primary-dark: #225f2f;
+  --ifm-color-primary-darker: #1f592c;
+  --ifm-color-primary-darkest: #1a4a24;
+  --ifm-color-primary-light: #2a7b3b;
+  --ifm-color-primary-lighter: #2d823e;
+  --ifm-color-primary-lightest: #359849;
+
+  /* Cores de destaque */
+  --ifm-color-accent-lime: #a9c83c;
+  --ifm-color-accent-gold: #f4bc2f;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #3fa857;
+  --ifm-color-primary-dark: #389a4e;
+  --ifm-color-primary-darker: #35914a;
+  --ifm-color-primary-darkest: #2c773d;
+  --ifm-color-primary-light: #4eb665;
+  --ifm-color-primary-lighter: #5abc70;
+  --ifm-color-primary-lightest: #7aca8a;
+
+  /* Cores de destaque */
+  --ifm-color-accent-lime: #b8d44d;
+  --ifm-color-accent-gold: #f5c542;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* ===== DETALHES COM CORES DE DESTAQUE ===== */
+
+/* Borda superior da navbar com gradiente */
+.navbar {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, var(--ifm-color-accent-lime), var(--ifm-color-accent-gold)) 1;
+}
+
+/* Hover nos links do menu com cor dourada */
+.navbar__link:hover {
+  color: var(--ifm-color-accent-gold) !important;
+}
+
+/* Marcador de item ativo na sidebar com cor lime */
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 3px solid var(--ifm-color-accent-lime);
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) - 3px);
+}
+
+/* Linha decorativa nos títulos h1 */
+.markdown h1:first-of-type {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-accent-lime), var(--ifm-color-accent-gold)) 1;
+  padding-bottom: 0.5rem;
+}
+
+/* Destaque em código inline */
+code {
+  border-left: 2px solid var(--ifm-color-accent-lime);
+}
+
+/* Botão com efeito hover dourado */
+.button--primary:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-accent-lime));
+  border-color: var(--ifm-color-accent-gold);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-accent-lime);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+/* Badge/Tag decorativa */
+.badge--secondary {
+  background-color: var(--ifm-color-accent-gold);
+  color: #1a1a1a;
+}
+
+/* Blockquote com destaque */
+blockquote {
+  border-left: 4px solid var(--ifm-color-accent-lime);
+  background: linear-gradient(90deg, rgba(169, 200, 60, 0.1), transparent);
+}
+
+/* Tabelas com linha de destaque */
+table thead tr {
+  border-bottom: 2px solid var(--ifm-color-accent-gold);
+}
+
+table tbody tr:hover {
+  background-color: rgba(169, 200, 60, 0.1);
+}
+
+/* Destaque nos links da TOC ao passar o mouse */
+.table-of-contents__link:hover {
+  color: var(--ifm-color-accent-gold);
+}
+
+/* Categoria expandida na sidebar */
+.menu__list-item-collapsible:hover {
+  background: linear-gradient(90deg, rgba(38, 109, 53, 0.1), transparent);
+}

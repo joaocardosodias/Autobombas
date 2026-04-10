@@ -1,0 +1,10 @@
+{
+    "label": "Sprint 2",
+    "position": 2,
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "generated-index",
+        "description": "Documentos e Logs da Sprint 2"
+    }
+}

@@ -15,15 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  // Para GitLab Pages: https://<namespace>.gitlab.io/<repo>/
-  url: process.env.SITE_URL || 'http://localhost:4000',
+  url: process.env.SITE_URL || 'https://joaocardosodias.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // Use variável de ambiente para GitLab Pages ou '/' para desenvolvimento local
-  baseUrl: process.env.BASE_URL || '/',
+  baseUrl: process.env.BASE_URL || '/Autobombas/',
 
-  // GitLab Pages deployment config
-  organizationName: 'inteli-college', // Seu namespace no GitLab
-  projectName: 'g06', // Nome do repositório
+  // GitHub Pages deployment config
+  organizationName: 'joaocardosodias',
+  projectName: 'Autobombas',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
